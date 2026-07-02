@@ -1,0 +1,20 @@
+# Blender自動バックアップ
+blender/*.blend1
+blender/*.blend2
+
+# レンダリング出力（大容量）
+blender/render/
+
+# HDRIファイル（大容量・再ダウンロード可能）
+blender/hdri/*.hdr
+blender/hdri/*.exr
+
+# テクスチャ大容量ファイル（必要に応じてコメントアウト）
+# blender/textures/
+
+# エクスポートファイル
+blender/export/
+
+# OS
+.DS_Store
+Thumbs.db
