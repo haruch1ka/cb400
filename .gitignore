@@ -1,6 +1,7 @@
 # Blender自動バックアップ
 blender/*.blend1
 blender/*.blend2
+blender/backups/
 
 # レンダリング出力（大容量）
 blender/render/

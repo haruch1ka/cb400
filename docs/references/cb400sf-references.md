@@ -75,6 +75,30 @@
 
 ---
 
+## エンジン関連資料（ブループリント・構造図）
+
+エンジン単体の三面図（線画ブループリント）は市販バイクでは一般に流通しておらず、Web検索でも見つからなかった。代わりに以下を組み合わせてモデリングの参考にする。
+
+| リンク | 内容 |
+|--------|------|
+| [Honda公式パーツカタログ（HMJ）](https://www.hondamotopub.com/HMJ/) | 車種・年式を選択すると分解図（パーツカタログ）を閲覧できる可能性あり。**要手動確認**：CB400 SUPER FOUR / NC42 を選択して分解図の有無を確認すること |
+| [Webike CB400SF(NC42) エンジンパーツ一覧](https://www.webike.net/md/215/kt/3514/bm/10001180/) | エンジンパーツ・吸気・燃料・点火・冷却の商品カテゴリ一覧（分解図なし、部品名称の確認用） |
+| [CMSNL CB400 SUPER FOUR (NC39) パーツリスト](https://www.cmsnl.com/honda-cb400-super-four-2005-5-japan-nc39-110_model49744/partslist/) | NC39型（NC42とエンジン形状が近い）の分解図（exploded diagram）。**自動アクセス不可（bot対策で403）**、ブラウザで手動閲覧が必要 |
+| [NC42サービスマニュアル情報（tokidokidokin.com）](http://tokidokidokin.com/2010/09/cb400sf-revo-nc42cb400a9-j%E3%81%AE%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB%E3%81%A8%E3%83%91%E3%83%BC%E3%83%84%E3%82%AB%E3%82%BF%E3%83%AD%E3%82%B0%EF%BC%88/) | サービスマニュアル・パーツカタログ（管理番号60MFM00・11MFM902）の入手先情報。有償・手動入手が必要 |
+
+### エンジン寸法データ（Honda公式FactBookより確認済み）
+- エンジン型式：NC42E　水冷4ストロークDOHC4バルブ4気筒
+- 総排気量：399cm³
+- 内径×行程：55.0×42.0mm
+- 圧縮比：11.3
+
+### 今すぐやること（Phase 2着手前の残タスク）
+1. [Honda公式パーツカタログ](https://www.hondamotopub.com/HMJ/) でCB400 SUPER FOUR (NC42) を選択し、エンジン分解図があれば保存 → `blender/references/blueprint/engine/`
+2. [CMSNL NC39パーツリスト](https://www.cmsnl.com/honda-cb400-super-four-2005-5-japan-nc39-110_model49744/partslist/) をブラウザで開き、エンジン関連ページ（Cylinder Head、Crankcase等）の分解図を保存
+3. 上記で入手困難な場合は、既存の `cb400sf-055.jpg`（エンジン近接写真）と本ページの寸法データで代用してブロッキングを進める
+
+---
+
 ## パーツカタログ・構造資料
 
 | リンク | 内容 |
